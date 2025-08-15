@@ -52,7 +52,7 @@ export default function homepage() {
                 </div>
                 <div className="">
                     <ScrollStack className="h-[40rem] w-auto px-4 md:px-24 xl:px-36">
-                        <ScrollStackItem >
+                        <ScrollStackItem>
                             <ProjectCard
                                 link="/rwfd"
                                 title={
@@ -106,7 +106,7 @@ export default function homepage() {
                 </div>
 
                 <div className="mt-[4rem] mb-[2rem]">
-                   <Footer />
+                    <Footer />
                 </div>
             </div>
         </>

@@ -1,6 +1,5 @@
 import { Footer } from '@/components/footer';
 import { Memo } from '@/components/memo';
-import { Photos } from '@/components/photo-drag-animation';
 import { ProjectCard } from '@/components/project-card';
 import { NavbarRwfd } from '@/components/projects/navbar-rwfd';
 import ScrollStack, { ScrollStackItem } from '@/components/scroll-stack';
@@ -45,68 +44,59 @@ export default function Rwfd() {
                 </div>
             </div>
             <hr></hr>
-            <div className="lg:x-32 flex flex-col items-center justify-center px-8 py-8 md:px-32 xl:px-64">
-                <div className="mt-4 mb-24 grid grid-cols-1 items-start gap-x-8 md:mb-0 md:grid-cols-3 lg:mt-8 lg:mb-8 lg:grid-cols-3">
-                    <div className="flex h-auto flex-col items-start justify-start md:col-span-2">
-                        <h1 className="font-creato text-[1.5rem] font-bold text-black">Foreword</h1>
+            <div className="lg:x-32 flex flex-col items-start justify-center px-8 py-8 md:px-32 xl:px-64">
+                <div className="mt-4 items-start overflow-hidden">
+                    <div className="flex h-auto flex-col items-start justify-start">
+                        <h1 className="font-creato text-[1.5rem] font-bold text-black lg:text-[2rem]">Foreword</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                            sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
+                            The internship is mandatory and held for <span className="font-bold">3 months </span>with my friends,{' '}
+                            <span className="font-bold">Arya & Hansen</span>. I was given the responsibility for UI/UX, but then expanded to
+                            information gathering to formulate reasonable product design.
                         </p>
                     </div>
-
-                    {/* <div className="relative inset-0 w-auto lg:h-[5rem] xl:mt-0">
-                        <img
-                            src="/images/rwfd/rwfd-eriq.svg"
-                            className="absolute inset-0 z-10 h-[6rem] rotate-[2deg] transition-all duration-200 ease-in-out hover:z-15 hover:rotate-[-2deg] md:h-[10rem]"
-                        />
-                        <img
-                            src="/images/rwfd/rwfd-dimas.svg"
-                            className="absolute inset-0 top-1/5 left-2/5 z-10 h-[6rem] rotate-[-3deg] transition-all duration-200 ease-in-out hover:rotate-[2deg] md:top-[3rem] md:left-3/5 md:h-[10rem] lg:left-2/5"
-                        />
-                    </div> */}
                 </div>
 
-                <div className="mt-4 flex flex-col items-start justify-start md:mt-16">
-                    <h1 className="text-[1.5rem] font-bold text-black">Challenges</h1>
+                <div className="mt-8 flex flex-col items-start justify-start">
+                    <h1 className="text-[1.5rem] font-bold text-black lg:text-[2rem]">Challenges</h1>
 
                     <div className="bg-dot-pattern p-4 md:p-16 lg:p-8">
                         <div className="oveflow-hidden flex h-auto w-full items-start justify-center object-contain">
                             <div className="grid w-full grid-cols-1 justify-items-center gap-x-2 md:grid-cols-3 lg:grid-cols-3">
                                 <div className="relative h-[250px] w-[250px] rotate-[-5] transition-all duration-299 ease-in-out hover:rotate-1">
-                                    <Memo number="1" memotext="Identified user needs and purpose" />
+                                    <Memo number="1" memotext="What's the need & user purpose?" />
                                 </div>
                                 <div className="relative h-[250px] w-[250px] rotate-2 transition-all duration-299 ease-in-out hover:rotate-4">
-                                    <Memo number="2" memotext="Designed product solutions from needs" />
+                                    <Memo number="2" memotext="How are we going to design this?" />
                                 </div>
                                 <div className="relative h-[250px] w-[250px] rotate-2 transition-all duration-299 ease-in-out hover:rotate-4">
-                                    <Memo number="3" memotext="Developed user interface prototypes" />
+                                    <Memo number="3" memotext="How to transfer it to functional product?" />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <p className="mt-2 md:mt-0">
-                        My main challenge was to lay the foundation for the RWFD website by following a user-centric development process. I had to
-                        identify the core purpose and needs of our target users, then translate those insights into a practical product design that
-                        addressed their specific problems. The final and most critical step was to create an intuitive and user-friendly interface
-                        that not only looked good, but also directly reflected the needs and feedback gathered during the initial research phase.
+                        My main challenge was to{' '}
+                        <span className="bg-light-green font-bold"> lay the foundation for the RWFD website by following a user-centric </span>{' '}
+                        development process. I had to identify the core purpose and needs of our target users, then translate those insights into a
+                        practical product design that addressed their specific problems. The final outcome was to create an{' '}
+                        <span className="bg-light-green font-bold">functional and user-friendly interface</span> that not only looked good, but also
+                        directly reflected the needs and feedback gathered during the initial research phase.
                     </p>
                 </div>
 
-                <div className="mt-4 flex flex-col items-start justify-start md:mt-16">
-                    <h1 className="font-creato text-[1.5rem] font-bold text-black">Process</h1>
+                <div className="mt-8 flex flex-col items-start justify-start">
+                    <h1 className="font-creato text-[1.5rem] font-bold text-black lg:text-[2rem]">Process</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                        sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
-                        Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit
-                        amet.
+                        We follow the SDLC AGILE Framework for the product life cycle. For the design purpose, I use Design Thinking approach for
+                        phase 1 (Information Gathering) until phase 3 (Design).
                     </p>
-                    <div className="bg-dot-pattern relative inset-0 z-0 mt-4 h-[35rem] w-full overflow-hidden rounded-xl border-1 border-black bg-[#FFF7E2]">
-                        <Photos />
+                    <div className="grid h-auto w-auto grid-cols-1 items-start justify-start md:grid-cols-2">
+                        <img src="/images/rwfd/ideate-req.png" />
+                        <img src="/images/rwfd/ideate-brainstrom.png" />
                     </div>
                 </div>
-                <div className="mt-4 flex flex-col items-start justify-start md:mt-16">
-                    <h1 className="font-creato text-[1.5rem] font-bold text-black">Results</h1>
+                <div className="mt-8 flex flex-col items-start justify-start">
+                    <h1 className="font-creato text-[1.5rem] font-bold text-black lg:text-[2rem]">Results</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
                         sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.

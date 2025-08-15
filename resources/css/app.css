@@ -63,6 +63,10 @@ body {
 
 h1{font-family: Creato-Display;}
 
+.bg-light-green{
+    background-color: var(--light-green);
+}
+
 @theme {
     --font-sans:
         'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -137,6 +141,7 @@ h1{font-family: Creato-Display;}
 :root {
     --background: rgba(255, 249, 235, 1);
     --foreground: rgba(255, 249, 235, 1);
+    --light-green: #D2E09A;
     --card: oklch(1 0 0);
     --card-foreground: oklch(0.145 0 0);
     --popover: oklch(1 0 0);
