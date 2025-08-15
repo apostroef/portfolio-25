@@ -1,8 +1,6 @@
 import { Footer } from '@/components/footer';
 import { Memo } from '@/components/memo';
-import { ProjectCard } from '@/components/project-card';
 import { NavbarRwfd } from '@/components/projects/navbar-rwfd';
-import ScrollStack, { ScrollStackItem } from '@/components/scroll-stack';
 import { XMargin } from '@/components/x-margin-line';
 export default function Rwfd() {
     return (
@@ -90,7 +88,7 @@ export default function Rwfd() {
                         We follow the SDLC AGILE Framework for the product life cycle. For the design purpose, I use Design Thinking approach for
                         phase 1 (Information Gathering) until phase 3 (Design).
                     </p>
-                    <div className="grid h-auto w-auto grid-cols-1 items-start justify-start md:grid-cols-2">
+                    <div className="bg-dot-pattern grid h-auto w-auto grid-cols-1 items-start justify-start p-4 md:grid-cols-2">
                         <img src="/images/rwfd/ideate-req.png" />
                         <img src="/images/rwfd/ideate-brainstrom.png" />
                     </div>
@@ -105,58 +103,7 @@ export default function Rwfd() {
                     </p>
                 </div>
                 <div className="mt-4 flex h-[40rem] w-full flex-col items-center justify-center">
-                    <ScrollStack className="w-full">
-                        <ScrollStackItem>
-                            <ProjectCard
-                                link="/rwfd"
-                                title={
-                                    <>
-                                        Real World <span className="font-serif italic">Fake Data</span> Website
-                                    </>
-                                }
-                                description={
-                                    <>
-                                        March - July 2025 | <span className="font-bold">Role</span> Product Designer |{' '}
-                                        <span className="font-bold">User</span> Academic Civitas | <span className="font-bold">Scope</span>{' '}
-                                        Information Gathering, UI/UX, User Research, Prototyping, Design System
-                                    </>
-                                }
-                                intro="In a 3-person team, I designed and coded interface following SLDC and Design Thinking framework."
-                                problem="How Might We build a website to publish and manage research datasets from Airlangga University's faculty and staff, making them accessible for use?"
-                                imgSrc1="/images/faq.gif"
-                                imgSrc2="/images/landing-page.gif"
-                                imgSrc3="/images/tags-dataset.gif"
-                            />
-                        </ScrollStackItem>
-                        <ScrollStackItem>
-                            <ProjectCard
-                                title={
-                                    <>
-                                        TedXUA <span className="font-serif italic">Official</span> Website
-                                    </>
-                                }
-                                description="Aug - Oct 2024 | Role UI/UX Designer | Users General Buyer | Scope UI/UX, Prototyping, System Designs"
-                                intro="I contributed in designing responsive Landing Page, Event Page and Ticketing Page along with the system flows."
-                                problem="How Migh We Build an official website that shows main theme idea and easy to navigate."
-                                imgSrc1="/images/CALEB.png"
-                                imgSrc2="/images/CALEB.png"
-                            />
-                        </ScrollStackItem>
-                        <ScrollStackItem>
-                            <ProjectCard
-                                title={
-                                    <>
-                                        Abstract <span className="font-serif italic">Keywords</span> Extraction
-                                    </>
-                                }
-                                description="March - July 2025 | Role Product Designer | Users Academic Civitas  | Scope Information Gathering, UI/UX, User Research, Prototyping, Design System"
-                                intro="In a 3-person team, I designed and coded interface following SLDC and Design Thinking framework."
-                                problem="How Might We build a website to publish and manage research datasets from Airlangga University's faculty and staff, making them accessible for use?"
-                                imgSrc1="/images/faq.gif"
-                                imgSrc2="/images/tags-dataset.gif"
-                            />
-                        </ScrollStackItem>
-                    </ScrollStack>
+                    <p>mikir</p>
                 </div>
                 <div className="mt-4 flex flex-col items-start justify-start md:mt-16">
                     <h1 className="font-creato text-[1.5rem] font-bold text-black">Afterword</h1>
