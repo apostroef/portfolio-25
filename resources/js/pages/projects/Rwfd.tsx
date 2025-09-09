@@ -57,16 +57,16 @@ export default function Rwfd() {
                 <div className="mt-8 flex flex-col items-start justify-start">
                     <h1 className="text-[1.5rem] font-bold text-black lg:text-[2rem]">Challenges</h1>
 
-                    <div className="bg-dot-pattern p-4 md:p-16 lg:p-8">
-                        <div className="oveflow-hidden flex h-auto w-full items-start justify-center object-contain">
-                            <div className="grid w-full grid-cols-1 justify-items-center gap-x-2 md:grid-cols-3 lg:grid-cols-3">
-                                <div className="relative h-[250px] w-[250px] rotate-[-5] transition-all duration-299 ease-in-out hover:rotate-1">
+                    <div className="bg-dot-pattern p-2 md:p-16 lg:p-8">
+                        <div className="oveflow-hidden flex h-auto w-full items-center justify-center object-contain">
+                            <div className="grid w-full grid-cols-1 justify-items-center gap-x-2 p-4 md:grid-cols-3 md:gap-x-24 md:py-0 lg:grid-cols-3">
+                                <div className="relative rotate-[-5] py-2 transition-all duration-299 ease-in-out hover:rotate-1">
                                     <Memo number="1" memotext="What's the need & user purpose?" />
                                 </div>
-                                <div className="relative h-[250px] w-[250px] rotate-2 transition-all duration-299 ease-in-out hover:rotate-4">
+                                <div className="relative rotate-2 py-2 transition-all duration-299 ease-in-out hover:rotate-4">
                                     <Memo number="2" memotext="How are we going to design this?" />
                                 </div>
-                                <div className="relative h-[250px] w-[250px] rotate-2 transition-all duration-299 ease-in-out hover:rotate-4">
+                                <div className="relative rotate-2 py-2 transition-all duration-299 ease-in-out hover:rotate-4">
                                     <Memo number="3" memotext="How to transfer it to functional product?" />
                                 </div>
                             </div>
@@ -95,23 +95,25 @@ export default function Rwfd() {
                 </div>
                 <div className="mt-8 flex flex-col items-start justify-start">
                     <h1 className="font-creato text-[1.5rem] font-bold text-black lg:text-[2rem]">Results</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                        sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
-                        Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit
-                        amet.
-                    </p>
                 </div>
-                <div className="mt-4 flex h-[40rem] w-full flex-col items-center justify-center">
-                    <p>mikir</p>
+                <div className="flex w-full flex-col items-center justify-center">
+                    <div className="flex h-auto w-full flex-row gap-x-4 rounded-2xl bg-black p-4 md:gap-x-12">
+                        <img src="images/landing-page.gif" className="h-full w-[5rem] md:w-[10rem]" />
+                        <img src="images/landing-page.gif" className="h-full w-[5rem] md:w-[10rem]" />
+                    </div>
                 </div>
                 <div className="mt-4 flex flex-col items-start justify-start md:mt-16">
-                    <h1 className="font-creato text-[1.5rem] font-bold text-black">Afterword</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                        sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
-                        Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit
-                        amet.
+                    <div className="flex flex-row items-center justify-center gap-x-2">
+                        <h1 className="font-creato text-[1.5rem] font-bold text-black">Afterword</h1>
+                        <img src="images/star-component.png" className="h-full w-[1.5rem]" />
+                    </div>
+                    <p className="">
+                        I deeply appreciate the opportunity provided by{' '}
+                        <span className="bg-light-green font-bold">@SatuData Universitas Airlangga</span>. I learned a lot of valuable lessons,
+                        getting hands-on experience in a product design approach that blends{' '}
+                        <span className="bg-light-green font-bold">Design Thinking with SDLC</span>. It was an incredible journey of honing my skills
+                        in selecting the right tech stack based on company standards and applying modern technologies like React libraries and
+                        responsive design principles with Figma's Auto Layout.
                     </p>
                 </div>
             </div>
