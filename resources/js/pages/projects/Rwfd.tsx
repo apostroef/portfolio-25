@@ -95,11 +95,16 @@ export default function Rwfd() {
                 </div>
                 <div className="mt-8 flex flex-col items-start justify-start">
                     <h1 className="font-creato text-[1.5rem] font-bold text-black lg:text-[2rem]">Results</h1>
+                    <p>a</p>
                 </div>
                 <div className="flex w-full flex-col items-center justify-center">
-                    <div className="flex h-auto w-full flex-row gap-x-4 rounded-2xl bg-black p-4 md:gap-x-12">
-                        <img src="images/landing-page.gif" className="h-full w-[5rem] md:w-[10rem]" />
-                        <img src="images/landing-page.gif" className="h-full w-[5rem] md:w-[10rem]" />
+                    <div className="flex h-auto w-full flex-col rounded-2xl bg-black">
+                        <div className="flex flex-row items-start justify-center gap-x-4 p-4 md:gap-x-12">
+                            <img src="images/landing-page.gif" className="h-full w-[5rem] md:w-[7rem] lg:w-[10rem]" />
+                            <img src="images/rwfd/dataset-page.gif" className="h-full w-[5rem] md:w-[7rem] lg:w-[10rem]" />
+                            <img src="images/rwfd/dataset-detail-page.gif" className="h-full w-[5rem] md:w-[7rem] lg:w-[10rem]" />
+                        </div>
+                        <p className="text-white"> abcd </p>
                     </div>
                 </div>
                 <div className="mt-4 flex flex-col items-start justify-start md:mt-16">
