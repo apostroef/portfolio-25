@@ -47,9 +47,10 @@ export default function Rwfd() {
                     <div className="flex h-auto flex-col items-start justify-start">
                         <h1 className="font-creato text-[1.5rem] font-bold text-black lg:text-[2rem]">Foreword</h1>
                         <p>
-                            The internship is mandatory and held for <span className="font-bold">3 months </span>with my friends,{' '}
-                            <span className="font-bold">Arya & Hansen</span>. I was given the responsibility for UI/UX, but then expanded to
-                            information gathering to formulate reasonable product design.
+                            The internship was held for <span className="font-bold">3 months </span>with my friends,{' '}
+                            <span className="font-bold">Arya & Hansen</span> with me as the team leader. I was given the responsibility for{' '}
+                            <span className="bg-light-green font-bold">UI/UX and Front-End development</span> based on information gathering from user
+                            and stakeholder in order to formulate reasonable product design.
                         </p>
                     </div>
                 </div>
@@ -86,25 +87,50 @@ export default function Rwfd() {
                     <h1 className="font-creato text-[1.5rem] font-bold text-black lg:text-[2rem]">Process</h1>
                     <p>
                         We follow the SDLC AGILE Framework for the product life cycle. For the design purpose, I use Design Thinking approach for
-                        phase 1 (Information Gathering) until phase 3 (Design).
+                        phase 1 (Information Gathering) until phase 3 (Design). From the afinity diagram, we group features based on it's purpose.
                     </p>
-                    <div className="bg-dot-pattern grid h-auto w-auto grid-cols-1 items-start justify-start p-4 md:grid-cols-2">
-                        <img src="/images/rwfd/ideate-req.png" />
-                        <img src="/images/rwfd/ideate-brainstrom.png" />
+                    <h2 className="px-4 py-2 font-creato text-[1.5rem] text-black lg:text-[2rem]">
+                        Q1. <span className="font-shine">Users Need & Product Purpose</span>
+                    </h2>
+                    <div className="flex flex-col px-4 py-2">
+                        <h2 className="font-creato text-[1.5rem] text-black lg:text-[2rem]">
+                            Q2. <span className="font-shine">SDLC & Design Thinking</span>
+                        </h2>
+                        <p>The practice of Design Thinking helped me create </p>
+                        <div className="bg-dot-pattern grid h-auto w-auto grid-cols-1 items-start justify-start p-4">
+                            <img src="/images/rwfd/ideate-brainstrom.png" />
+                            <img src="/images/rwfd/ideate-req.png" />
+                        </div>
                     </div>
+
+                    <h2 className="px-4 py-2 font-creato text-[1.5rem] text-black lg:text-[2rem]">
+                        Q3. <span className="font-shine">Prototyping</span>
+                    </h2>
                 </div>
                 <div className="mt-8 flex flex-col items-start justify-start">
                     <h1 className="font-creato text-[1.5rem] font-bold text-black lg:text-[2rem]">Results</h1>
-                    <p>a</p>
+                    <p>Includes design prototype of Landing Page, Dataset and Notebook page, FAQ, About Us and Profile page.</p>
                 </div>
-                <div className="flex w-full flex-col items-center justify-center">
+                <div className="flex w-full flex-col items-center justify-center md:py-4">
                     <div className="flex h-auto w-full flex-col rounded-2xl bg-black">
-                        <div className="flex flex-row items-start justify-center gap-x-4 p-4 md:gap-x-12">
-                            <img src="images/landing-page.gif" className="h-full w-[5rem] md:w-[7rem] lg:w-[10rem]" />
-                            <img src="images/rwfd/dataset-page.gif" className="h-full w-[5rem] md:w-[7rem] lg:w-[10rem]" />
-                            <img src="images/rwfd/dataset-detail-page.gif" className="h-full w-[5rem] md:w-[7rem] lg:w-[10rem]" />
+                        <div className="p-4">
+                            <h2 className="text-[1.8rem] font-bold !text-white">Mobile View</h2>
+                            <p className="!text-white">Designed in 375px dimension for friendly user interaction in mobile. </p>
                         </div>
-                        <p className="text-white"> abcd </p>
+                        <div className="grid items-center justify-center gap-x-4 p-4 lg:grid-cols-4">
+                            <div className="flex flex-col items-center justify-center">
+                                <img src="images/landing-page.gif" className="h-full w-[5rem] md:w-[7rem] lg:w-[10rem]" />
+                                <p className="!text-white lg:p-2">Landing-Page</p>
+                            </div>
+                            <div className="flex flex-col items-center justify-center">
+                                <img src="images/rwfd/dataset-page.gif" className="h-full w-[5rem] md:w-[7rem] lg:w-[10rem]" />
+                                <p className="!text-white lg:p-2">Dataset-Page</p>
+                            </div>
+                            <div className="flex flex-col items-center justify-center">
+                                <img src="images/rwfd/dataset-detail-page.gif" className="h-full w-[5rem] md:w-[7rem] lg:w-[10rem]" />
+                                <p className="!text-white lg:p-2">Dataset-Details</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="mt-4 flex flex-col items-start justify-start md:mt-16">
