@@ -1,6 +1,7 @@
 import { Footer } from '@/components/footer';
 import { Memo } from '@/components/memo';
 import { NavbarRwfd } from '@/components/projects/navbar-rwfd';
+import { ProjectHeader } from '@/components/projects/project-header';
 import { XMargin } from '@/components/x-margin-line';
 export default function Rwfd() {
     return (
@@ -9,16 +10,22 @@ export default function Rwfd() {
             <div className="h-auto w-auto py-8">
                 <NavbarRwfd />
             </div>
-            <div className="flex flex-col items-center justify-center px-8 py-4 md:mt-24 md:px-32 lg:px-32 xl:px-64">
-                <div className="flex flex-col justify-center md:items-start lg:items-center">
-                    <h1 className="font-creato text-[3rem] text-black md:text-[4rem] lg:text-[3.5rem]">
-                        Real World <span className="font-serif italic">Fake Data </span> Website
-                    </h1>
-                    <p>3 person-team internship project @SatuData Universitas Airlangga.</p>
-                    <p>Website to manage, publish and find academic dataset directly from researches in Universitas Airlangga</p>
-                    <img src="/images/rwfd/rwfd-mockup.png" className="h-auto w-[36rem]" />
-                </div>
-            </div>
+            <ProjectHeader
+                ProjectTitle={
+                    <>
+                        Real World <span className="font-serif italic">Fake Data</span> Website
+                    </>
+                }
+                ProjectDesc={
+                    <>
+                        <p className="md:text-center">3 person-team internship project @SatuData Universitas Airlangga.</p>
+                        <p className="md:text-center">
+                            Website to manage, publish and find academic dataset directly from researches in Universitas Airlangga
+                        </p>
+                    </>
+                }
+                ProjectCover="/images/rwfd/rwfd-mockup.png"
+            />
             <div className="grid grid-cols-1 items-start gap-x-4 gap-y-2 px-8 py-8 md:grid-cols-3 md:px-32 md:py-4 lg:grid-cols-5 lg:px-32 xl:px-64">
                 <div className="flex flex-col items-start justify-center">
                     <h1 className="font-creato text-[1rem] font-bold text-black">Timeline</h1>
@@ -49,8 +56,9 @@ export default function Rwfd() {
                         <p>
                             The internship was held for <span className="font-bold">3 months </span>with my friends,{' '}
                             <span className="font-bold">Arya & Hansen</span> with me as the team leader. I was given the responsibility for{' '}
-                            <span className="bg-light-green font-bold">UI/UX and Front-End development</span> based on information gathering from user
-                            and stakeholder in order to formulate reasonable product design.
+                            <span className="bg-light-green font-bold">UI/UX and Front-End development</span> that includes translating user needs
+                            into technical specifications, designing products using the Design Thinking framework, creating responsive UI prototypes
+                            in Figma, and managing complete project documentation.
                         </p>
                     </div>
                 </div>
@@ -68,7 +76,7 @@ export default function Rwfd() {
                                     <Memo number="2" memotext="How are we going to design this?" />
                                 </div>
                                 <div className="relative rotate-2 py-2 transition-all duration-299 ease-in-out hover:rotate-4">
-                                    <Memo number="3" memotext="How to transfer it to functional product?" />
+                                    <Memo number="3" memotext="How to transfer accepted feature to functional product?" />
                                 </div>
                             </div>
                         </div>
@@ -86,17 +94,51 @@ export default function Rwfd() {
                 <div className="mt-8 flex flex-col items-start justify-start">
                     <h1 className="font-creato text-[1.5rem] font-bold text-black lg:text-[2rem]">Process</h1>
                     <p>
-                        We follow the SDLC AGILE Framework for the product life cycle. For the design purpose, I use Design Thinking approach for
-                        phase 1 (Information Gathering) until phase 3 (Design). From the afinity diagram, we group features based on it's purpose.
+                        We follow the <span className="bg-light-green font-bold">SDLC Agile</span> Framework for the product life cycle. For the
+                        design purpose, I use Design Thinking approach for phase 1 (Information Gathering) until phase 3 (Design). We excluded the
+                        Testing & Maintenance Phase for the lack of time and expertise.
                     </p>
-                    <h2 className="px-4 py-2 font-creato text-[1.5rem] text-black lg:text-[2rem]">
-                        Q1. <span className="font-shine">Users Need & Product Purpose</span>
-                    </h2>
                     <div className="flex flex-col px-4 py-2">
                         <h2 className="font-creato text-[1.5rem] text-black lg:text-[2rem]">
-                            Q2. <span className="font-shine">SDLC & Design Thinking</span>
+                            Q1. <span className="font-shine md:text-[2.5rem]">Users & Product Purpose</span>
                         </h2>
-                        <p>The practice of Design Thinking helped me create </p>
+                        <p>
+                            First phase of design thinking requires me to conduct User & Stakeholder Interview to create{' '}
+                            <span className="bg-light-green font-bold">User Journey and Use Case</span>. This phase was conducted for 2 weeks and
+                            mostly done with interview and enterprise application observation to understand business objective.
+                        </p>
+                        <br></br>
+
+                        <p>To ensure a direct and correct understanding towards software purpose, I concluded the finding into HMW formula:</p>
+                        <div className="bg-dot-pattern md:mt-8">
+                            <p className="text-center text-[1.5rem] font-bold">
+                                "How might we build a website to publish and manage research datasets from Universitas Airlangga’s academic community
+                                so they can be utilized?"
+                            </p>
+                        </div>
+                        <br></br>
+                        <p>
+                            {' '}
+                            The information gathered resulting in{' '}
+                            <span className="bg-light-green font-bold">4 type of users, with Univeristy Civitas becomes the main user</span>. The user
+                            defined will have different authorization and access of the website.
+                        </p>
+                        <br></br>
+                        <div className="bg-dot-pattern rounded-2xl">
+                            <img src="images/rwfd/user-identification.png" className="" />
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col px-4 py-2">
+                        <h2 className="font-creato text-[1.5rem] text-black lg:text-[2rem]">
+                            Q2. <span className="font-shine md:text-[2.5rem]">Feature Design</span>
+                        </h2>
+                        <p>
+                            To understand the feature of website functions, I asked my team to{' '}
+                            <span className="bg-light-green font-bold">brainstorm and discuss</span> the possible characteristic that need to be
+                            fulfiled by design. The brainstorm includes the opinion from our Full-Stack and Back-End engineer that enrich my{' '}
+                            <span className="bg-light-green font-bold">design decision to align with technical need</span>.{' '}
+                        </p>
                         <div className="bg-dot-pattern grid h-auto w-auto grid-cols-1 items-start justify-start p-4">
                             <img src="/images/rwfd/ideate-brainstrom.png" />
                             <img src="/images/rwfd/ideate-req.png" />
@@ -104,7 +146,7 @@ export default function Rwfd() {
                     </div>
 
                     <h2 className="px-4 py-2 font-creato text-[1.5rem] text-black lg:text-[2rem]">
-                        Q3. <span className="font-shine">Prototyping</span>
+                        Q3. <span className="font-shine md:text-[2.5rem]">Prototyping</span>
                     </h2>
                 </div>
                 <div className="mt-8 flex flex-col items-start justify-start">
@@ -112,12 +154,12 @@ export default function Rwfd() {
                     <p>Includes design prototype of Landing Page, Dataset and Notebook page, FAQ, About Us and Profile page.</p>
                 </div>
                 <div className="flex w-full flex-col items-center justify-center md:py-4">
-                    <div className="flex h-auto w-full flex-col rounded-2xl bg-black">
+                    <div className="mt-8 flex h-auto w-full flex-col rounded-2xl bg-black md:mt-2">
                         <div className="p-4">
                             <h2 className="text-[1.8rem] font-bold !text-white">Mobile View</h2>
                             <p className="!text-white">Designed in 375px dimension for friendly user interaction in mobile. </p>
                         </div>
-                        <div className="grid items-center justify-center gap-x-4 p-4 lg:grid-cols-4">
+                        <div className="grid grid-cols-2 items-center justify-center gap-4 p-4 md:grid-cols-3">
                             <div className="flex flex-col items-center justify-center">
                                 <img src="images/landing-page.gif" className="h-full w-[5rem] md:w-[7rem] lg:w-[10rem]" />
                                 <p className="!text-white lg:p-2">Landing-Page</p>
