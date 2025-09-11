@@ -76,6 +76,7 @@ export default function homepage() {
                         </ScrollStackItem>
                         <ScrollStackItem>
                             <ProjectCard
+                                link="/tedx-ua"
                                 title={
                                     <>
                                         TedXUA <span className="font-serif italic">Official</span> Website
