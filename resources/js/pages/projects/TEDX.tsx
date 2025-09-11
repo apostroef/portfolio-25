@@ -6,12 +6,19 @@ export default function Rwfd() {
     return (
         <>
             <XMargin />
-            <NavBarProject ProjectName="projects/TEDX-UA" />
+            <NavBarProject ProjectName="projects/TEDX-UA" ProjectName2="projects/RWFD" link="/rwfd" />
             <ProjectHeader
-                ProjectTitle="TedX-UA Official Website"
-                ProjectDesc={<>
-                <p>3-person UI/UX team</p></>}
-                ProjectCover="images/rwfd/rwfd-mockup.png"
+                ProjectTitle={
+                    <>
+                        TedX-UA <span className="font-serif italic">Official</span> Website
+                    </>
+                }
+                ProjectDesc={
+                    <>
+                        <p>I contributed in designing responsive Landing Page, Event Page and Ticketing Page along with the system flows</p>
+                    </>
+                }
+                ProjectCover="images/tedx/banner-1.png"
             />
         </>
     );

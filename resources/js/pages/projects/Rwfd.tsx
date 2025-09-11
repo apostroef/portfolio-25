@@ -11,7 +11,7 @@ export default function Rwfd() {
     return (
         <>
             <XMargin />
-            <NavBarProject ProjectName="projects/RWFD" />
+            <NavBarProject ProjectName="projects/RWFD" ProjectName2="projects/TEDX-UA" link="/tedx-ua" />
             <ProjectHeader
                 ProjectTitle={
                     <>
