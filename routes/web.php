@@ -15,6 +15,10 @@ Route::get('/rwfd', function () {
     return Inertia::render('projects/Rwfd');
 })->name('rwfd');
 
+Route::get('/tedx-ua', function () {
+    return Inertia::render('projects/TEDX');
+})->name('tedx-ua');
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         return Inertia::render('dashboard');
