@@ -85,8 +85,8 @@ export default function homepage() {
                                 description="Aug - Oct 2024 | Role UI/UX Designer | Users General Buyer | Scope UI/UX, Prototyping, System Designs"
                                 intro="I contributed in designing responsive Landing Page, Event Page and Ticketing Page along with the system flows."
                                 problem="How Migh We Build an official website that shows main theme idea and easy to navigate."
-                                imgSrc1="/images/CALEB.png"
-                                imgSrc2="/images/CALEB.png"
+                                imgSrc2="/images/tedx/login-mobile.gif"
+                                imgSrc1="images/tedx/banner-no-border.gif"
                             />
                         </ScrollStackItem>
                         <ScrollStackItem>
