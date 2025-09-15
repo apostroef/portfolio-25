@@ -1,10 +1,12 @@
+import { Footer } from '@/components/footer';
 import { Memo } from '@/components/memo';
 import { Margin } from '@/components/projects/margin-project';
 import { NavBarProject } from '@/components/projects/navbar-project';
 import { DetailHeader } from '@/components/projects/project-details';
 import { ProjectHeader } from '@/components/projects/project-header';
+import { ResultGrid2 } from '@/components/projects/result-2-grid';
+import { ResultGrid1 } from '@/components/projects/result-grid1';
 import { ProjectSection } from '@/components/projects/section';
-import StickerPeel from '@/components/sticker';
 import { XMargin } from '@/components/x-margin-line';
 export default function Rwfd() {
     return (
@@ -102,7 +104,7 @@ export default function Rwfd() {
                                                 <div className="grid grid-cols-1 items-end justify-center p-4 md:grid-cols-4 md:gap-12 md:p-8">
                                                     <div className="col-span-3 flex flex-col items-center justify-center">
                                                         <img
-                                                            src="images/tedx/landing-page-black.gif"
+                                                            src="images/tedx/landing-page-mac.gif"
                                                             className="h-full w-[25rem] md:w-[20rem] lg:w-[30rem]"
                                                         />
                                                         <p className="!text-white lg:p-2">Landing-Page</p>
@@ -113,28 +115,34 @@ export default function Rwfd() {
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div className="p-4">
-                                                <hr className="h-[0.05rem] w-full bg-white"></hr>
-                                                <h2 className="text-[1.5rem] font-bold !text-white">Landing Page</h2>
-                                                <p className="!text-white">Design and showcase strong branding of TedXUA. </p>
-                                            </div>
-                                            <div className="grid grid-cols-1 items-end justify-center p-4 md:grid-cols-4 md:gap-12 md:p-8">
-                                                <div className="col-span-3 flex flex-col items-center justify-center">
-                                                    <img
-                                                        src="images/tedx/landing-page-black.gif"
-                                                        className="h-full w-[25rem] md:w-[20rem] lg:w-[30rem]"
-                                                    />
-                                                    <p className="!text-white lg:p-2">Landing-Page</p>
-                                                </div>{' '}
-                                                <div className="mt-12 flex flex-col items-center justify-center md:mt-0">
-                                                    <img src="images/tedx/landing-phone.png" className="w-auto md:h-full lg:h-[17rem]" />
-                                                    <p className="text-center !text-white lg:p-2">Landing-Page-Phone</p>
-                                                </div>
-                                            </div>
+                                            <ResultGrid2
+                                                title="Login Page"
+                                                desc="Login Page"
+                                                pcImage="images/tedx/login-pc.gif"
+                                                pcDesc="login-pc"
+                                                phoneImage="images/tedx/login-phone-black.gif"
+                                                phoneDesc="login-phone"
+                                            />
+                                            <ResultGrid2
+                                                title="Themes"
+                                                desc="Event theme informations"
+                                                pcImage="images/tedx/main-theme-black.gif"
+                                                pcClass="lg:w-[27rem]"
+                                                pcDesc="main-theme-pc"
+                                                phoneImage="images/tedx/theme-phone.png"
+                                                phoneDesc="main-theme"
+                                            />
+                                            <ResultGrid1
+                                                title="Ticketing System"
+                                                desc="Event theme informations"
+                                                pcImage="images/tedx/tiket-black.gif"
+                                                pcClass="lg:w-[40rem]"
+                                                pcDesc="ticketing-system"
+                                                colSpan="lg:col-span-4"
+                                            />
                                         </div>
 
-                                        <StickerPeel
+                                        {/* <StickerPeel
                                             imageSrc="images/tedx/stiker-1.png"
                                             width={200}
                                             rotate={0}
@@ -157,7 +165,7 @@ export default function Rwfd() {
                                             lightingIntensity={0.01}
                                             initialPosition={{ x: 0, y: 0 }}
                                             className="top-20 left-0 overflow-hidden"
-                                        />
+                                        /> */}
                                     </div>{' '}
                                 </>
                             }
@@ -165,6 +173,7 @@ export default function Rwfd() {
                     </>
                 }
             />
+            <Footer />
         </>
     );
 }
