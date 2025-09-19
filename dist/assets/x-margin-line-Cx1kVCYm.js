@@ -1,0 +1,1 @@
+import{j as r}from"./app-B92lCtBJ.js";function o(){return r.jsxs("div",{children:[r.jsx("div",{className:"fixed top-0 bottom-0 md:left-8 left-2 z-60 h-full border-l border-black"}),r.jsx("div",{className:"fixed top-0 md:right-8 right-2 bottom-0 z-60 h-full border-r border-black"})]})}export{o as X};
