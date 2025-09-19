@@ -65,4 +65,6 @@
         "@tailwindcss/oxide-linux-x64-gnu": "^4.0.1",
         "lightningcss-linux-x64-gnu": "^1.29.1"
     }
+    "homepage": "https://apostroef.github.io/portfolio-25"
+
 }
