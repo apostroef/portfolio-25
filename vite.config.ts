@@ -14,9 +14,9 @@ export default defineConfig({
         react(),
         tailwindcss(),
     ],
-    base: '/portfolio-25/',
+    base: '/portfolio-25',
     build: {
-        outDir: 'dist', // ensure build goes to dist/
+        outDir: 'dist',
     },
     esbuild: {
         jsx: 'automatic',
